@@ -1,0 +1,183 @@
+
+.container-header{
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 30vh;
+  background-color:#36454F ;
+}
+
+.links{
+  color:#FFCC00;
+
+}
+
+.links :active{
+color: #F5F5F5;
+
+}
+
+.barra-nav {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.barra-nav input {
+  width: 80%; 
+  padding: 10px;
+  font-size: 1em;
+  margin: 0 auto; 
+  border-radius: 10px;
+}
+
+
+.titulos {
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: #003366;
+    color: #F5F5F5;
+  }
+
+  .footerinfo{
+    font-family: "Cactus Classical Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #F5F5F5;
+  }
+
+.info-foot-start{
+  display: grid;
+  text-align:start;
+  justify-content:start;
+}
+.info-foot-center{
+  display: grid;
+  justify-content: center;
+}
+.info-foot-end{
+  display: grid;
+text-align: end;
+}
+
+  .container-footer {
+    height: 45vh;
+    background-color: #36454F; 
+    display: grid;
+    text-align: center;
+  align-items: center;
+  justify-content:space-between;
+  grid-template-columns: 1fr 1fr 1fr 
+  }
+
+  body {
+    background-color: #F5F5F5;
+    height: 100vh;
+   }
+.img-header{
+  width: auto;
+  margin: 0px auto;
+display: block;
+place-items: center;
+}
+
+#ordenar{
+  width: 100px;
+  background-position: right;
+}
+
+.secc-collares{
+  display: grid ;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between  ;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.order{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: block;
+  margin: auto;
+  text-align: right;
+  height: 15vh;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+.gallery-item {
+  text-align: center;
+}
+.gallery-item img {
+  max-width: 100%; 
+  display: block;
+  margin: 0 auto;
+}
+.gallery-item .caption {
+  margin-top: 10px; 
+  font-size: 16px;
+  color: #333;
+}
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .container-header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .container-header {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .barra-nav input {
+    width: 100%;
+  }
+
+  .container-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .info-foot-start, .info-foot-center, .info-foot-end {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+  }
+
+  .titulos {
+    font-size: 1.5em;
+    padding: 20px;
+  }
+
+  .gallery-item .caption {
+    font-size: 0.9em;
+  }
+
+  .container-header {
+    grid-template-columns: 1fr;
+  }
+}
