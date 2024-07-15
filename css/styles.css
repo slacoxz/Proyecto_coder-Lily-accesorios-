@@ -1,4 +1,36 @@
+.links h3 {
+  margin: 0;
+  color: #fff;
+}
 
+.img-header {
+  max-height: 150px;
+  width: auto;
+}
+
+.barra-nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.barra-nav input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+  .container-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .barra-nav input[type="text"] {
+      width: 100%;
+  }
+}
 .container-header{
   display: grid;
   text-align: center;
@@ -9,11 +41,9 @@
   background-color:#a28d7c ;
 }
 
-.links{
+.links h3 {
   color:#FFCC00;
-}
-.links :active{
-color: #F5F5F5;
+  margin: 0;
 }
 
 .barra-nav {
@@ -95,6 +125,7 @@ text-align: end;
     background-color: #F5F5F5;
     height: 100vh;
    }
+   
 .img-header{
   width: auto;
   margin: 0px auto;
