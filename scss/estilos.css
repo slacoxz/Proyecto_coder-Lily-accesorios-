@@ -1,0 +1,70 @@
+.footerinfo {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 300;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.footerinfo a {
+  color: #ffcc00;
+  transition: color 0.3s, transform 0.3s;
+}
+.footerinfo a:hover {
+  color: #ff9900;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #343a40;
+  color: #F5F5F5;
+  padding: 40px 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  color: #343a40;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn-primary:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+.info-foot-start, .info-foot-center, .info-foot-end {
+  display: grid;
+  text-align: center;
+}
+
+.info-foot-start {
+  justify-content: start;
+}
+
+.info-foot-center {
+  justify-content: center;
+}
+
+.info-foot-end {
+  justify-content: end;
+}
+
+.container-footer {
+  background-color: #36454F;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+}/*# sourceMappingURL=estilos.css.map */

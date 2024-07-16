@@ -1,0 +1,78 @@
+$primary-color: #ffcc00;
+$hover-color: #ff9900;
+$background-color: #343a40;
+$font-color: #F5F5F5;
+
+.footerinfo {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 300;
+  color: $primary-color;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+
+  a {
+    color: $primary-color;
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+      color: $hover-color;
+      transform: scale(1.1);
+    }
+  }
+}
+
+footer {
+  background-color: $background-color;
+  color: $font-color;
+  padding: 40px 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: $hover-color;
+    transform: scale(1.05);
+  }
+}
+
+.info-foot-start, .info-foot-center, .info-foot-end {
+  display: grid;
+  text-align: center;
+}
+
+.info-foot-start {
+  justify-content: start;
+}
+
+.info-foot-center {
+  justify-content: center;
+}
+
+.info-foot-end {
+  justify-content: end;
+}
+
+.container-footer {
+  background-color: #36454F;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+}
