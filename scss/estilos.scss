@@ -2,13 +2,99 @@ $primary-color: #ffcc00;
 $hover-color: #ff9900;
 $background-color: #343a40;
 $font-color: #F5F5F5;
+$bg-dark: #343a40;
+$text-white: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Cactus+Classical+Serif&display=swap');
+
+body {
+  font-family: 'Alegreya SC', serif;
+}
+
+// Header styles
+header {
+  background-color: $bg-dark;
+  color: $text-white;
+  text-align: center;
+  padding: 1rem 0;
+
+  .navbar-brand img {
+    height: 150px;
+  }
+
+  .navbar {
+    background-color: $bg-dark;
+
+    .navbar-toggler {
+      border-color: $primary-color;
+    }
+
+    .navbar-nav {
+      width: 100%;
+
+      .nav-item .nav-link {
+        color: $text-white;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Main content styles
+.titulos {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+
+  label {
+    margin-right: 1rem;
+  }
+
+  select {
+    padding: 0.5rem;
+  }
+}
+
+// Gallery styles
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .gallery-item {
+    margin: 1rem;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      margin: 0.5rem 0;
+    }
+
+    .caption {
+      font-size: 1.2rem;
+    }
+  }
+}
 
 .footerinfo {
   font-family: "Cactus Classical Serif", serif;
   font-weight: 300;
   color: $primary-color;
-  margin-bottom: 10px;
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 
   a {
     color: $primary-color;
@@ -22,9 +108,9 @@ $font-color: #F5F5F5;
 }
 
 footer {
-  background-color: $background-color;
-  color: $font-color;
-  padding: 40px 0;
+  background-color: $bg-dark;
+  color: $text-white;
+  padding-top: 2rem;
 }
 
 .form-control {
@@ -34,6 +120,18 @@ footer {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+.form-group {
+  label {
+    font-size: 1rem;
+  }
+}
+
+input {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 
 .btn-primary {
   background-color: $primary-color;
@@ -47,6 +145,7 @@ footer {
   &:hover {
     background-color: $hover-color;
     transform: scale(1.05);
+    border-color: darken($primary-color, 10%);
   }
 }
 
