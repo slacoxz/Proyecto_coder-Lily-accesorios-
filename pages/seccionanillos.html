@@ -10,17 +10,40 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
 
-        <div class="container-header">
-            <a href="../pages/seccioncollares.html" class="links"><h3>Collares</h3></a>
-            <a href="../pages/seccionaretes.html" class="links"><h3>Aretes</h3></a>
-           <a href="../index.html"><img src="../images/images-index/Default_genera_un_logo_para_una_tienda_virtual_de_accesorios_c_2.jpg"height="150" class="img-header"></a>
-            <a href="../pages/seccionanillos.html" class="links"><h3>Anillos</h3></a>
-            <a href="#" class="links"><h3>Porta barbijos</h3></a>
-        </div>
-    
-        </header>     
+    <header class="bg-dark text-white text-center py-3">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/images-index/Default_genera_un_logo_para_una_tienda_virtual_de_accesorios_c_2.jpg" height="150" class="img-header">
+        </a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccioncollares.html">Collares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccionaretes.html">Aretes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccionanillos.html">Anillos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Porta barbijos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Llaveros</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Pulseras</a>   
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <h1 class="titulos">Anillos</h1>
 
     <div class="order">
@@ -98,43 +121,41 @@
         </div>
     </div>
 
-    <footer>
-
-        <div class="container-footer">
-    
-            <div class="info-foot-start">
-    
-                <h3 class="footerinfo">NO TE PIERDAS LO NUEVO Y LAS PROMOS!</h3>
-            <form>
-                <label for="email" class="footerinfo">Email</label>
-                <input id="email" name="email">
-                <input type="submit">
-               </form>  
-            <h3 class="footerinfo">SEGUINOS EN NUESTRAS REDES!</h3>
-                <a href="#"><img src="../images/images-footer/instagram.png" height="50"><img src="../images/images-footer/facebook.png" height="50"></a>
-    
-            </div> 
-            
-            <div class="info-foot-center">
-    
-                <a href="../pages/infosobrenostros.html" class="footerinfo">Sobre nosotros</a>
-           <a href="#" class="footerinfo">Trabaja con nostros</a>
-        <a href="#" class="footerinfo">Politicas de privacidad</a>
-           <a href="#" class="footerinfo">Terminos y condiciones</a>
-           <a href="#" class="footerinfo">Proveedores</a>
-    
-        </div>
-    
-            <div class="info-foot-end">
-    
-                <h3 class="footerinfo">CONTACTANOS!</h3>
-         <a href="#" class="footerinfo">3875990710</a>
-           <a href="#" class="footerinfo">aguirrelily69@gmail.com</a>
-    
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="footerinfo">NO TE PIERDAS LO NUEVO Y LAS PROMOS!</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="email" class="footerinfo">Email</label>
+                            <input id="email" name="email" type="email" class="form-control">
+                        </div>
+                        <input type="submit" class="btn btn-primary">
+                    </form>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h3 class="footerinfo">INFORMACIÓN</h3>
+                    <a href="../pages/infosobrenostros.html" class="footerinfo">Sobre nosotros</a><br>
+                    <a href="#" class="footerinfo">Trabaja con nosotros</a><br>
+                    <a href="#" class="footerinfo">Políticas de privacidad</a><br>
+                    <a href="#" class="footerinfo">Términos y condiciones</a><br>
+                    <a href="#" class="footerinfo">Proveedores</a>
+                </div>
+                <div class="col-md-4 text-center">
+                <h3 class="footerinfo">SEGUINOS EN NUESTRAS REDES!</h3>
+                <a href="#">
+                    <img src="../images/images-footer/instagram.png" height="50">
+                    <img src="../images/images-footer/facebook.png" height="50">
+                    <img src="../images/images-footer/whatsapp.png" height="50">
+                    <img src="../images/images-footer/linkedin.png" height="50">
+                    <img src="../images/images-footer/tik-tok.png" height="50">
+                    <img src="../images/images-footer/gorjeo.png" height="50">
+                </a>
+                </div>
             </div>
-    
         </div>
-        
     </footer>
+
 </body>
 </html>
