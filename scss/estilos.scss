@@ -1,3 +1,4 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // Variables
 $primary-color: #ffcc00;
@@ -160,6 +161,8 @@ main {
     padding: 10px;
     margin-top: 2rem;
     @include fade-in(1s);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px;
   }
 
   .order{
@@ -179,6 +182,36 @@ main {
     justify-content: space-around;
     gap: 1rem;
     margin-top: 20px;
+
+.gallery-item img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-item h2 {
+  font-family: "Alegreya SC", serif;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.gallery-item .caption {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
 
     .gallery-item{
       width: 300px;
@@ -201,12 +234,13 @@ main {
         border-radius: 8px;
         display: block;
         margin: 0 auto;
-        transition: transform 0.3 ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         @include hover-scale(0.3s);
       }
 
       &:hover img{
         transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       } 
 
        h2 {
@@ -267,8 +301,16 @@ footer {
 
   .order {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     margin-bottom: 20px;
+
+    .order label, .order select {
+      font-family: "Cactus Classical Serif", serif;
+      font-size: 1.2rem;
+      margin-left: 10px;
+    }
+
 
     label {
         margin-right: 10px;
@@ -284,25 +326,21 @@ footer {
   .footerinfo {
     font-family: "Cactus Classical Serif", serif;
     font-weight: 300;
-    color: $primary-color;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    transition: color 0.3s, transform 0.3s;
-    display: block;
-    margin-bottom: 1rem;
-    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
 
-    a {
-      color: $primary-color;
-      @include hover-scale(0.3s);
-
-      &:hover {
-        color: $hover-color;
-        text-decoration: underline;
-      }
+    .footerinfo a {
+      color: #ffcc00;
+      transition: color 0.3s, transform 0.3s;
+    }
+    
+    .footerinfo a:hover {
+      color: #ff9900;
+      transform: scale(1.1);
     }
   }
-
 
   .form-control {
     width: 100%;
