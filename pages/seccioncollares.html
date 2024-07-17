@@ -5,121 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collares</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-    <body>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/images-index/Default_genera_un_logo_para_una_tienda_virtual_de_accesorios_c_2.jpg" height="150" class="img-header">
+        </a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccioncollares.html">Collares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccionaretes.html">Aretes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/seccionanillos.html">Anillos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Porta barbijos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Llaveros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pulseras</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <header class="bg-dark text-white text-center py-3">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../images/images-index/Default_genera_un_logo_para_una_tienda_virtual_de_accesorios_c_2.jpg" height="150" class="img-header">
-            </a>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/seccioncollares.html">Collares</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/seccionaretes.html">Aretes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/seccionanillos.html">Anillos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Porta barbijos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Llaveros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pulseras</a>
-                        </li>
-                    </ul>
+    <main class="container my-4 text-center">
+        <h1 class="text-center">Collares</h1>
+        <div class="text-center my-3">
+            <label for="ordenar" class="mr-2">Ordenar por</label>
+            <select id="ordenar" class="custom-select w-auto d-inline-block">
+                <option value="">Mayor precio</option>
+                <option value="">Menor precio</option>
+                <option value="">Más relevante</option>
+                <option value="">Menos relevante</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.09.jpeg" class="card-img-top" alt="Corazon Plateado">
+                    <div class="card-body">
+                        <h5 class="card-title">Corazon Plateado</h5>
+                        <p class="card-text">5.000$</p>
+                    </div>
                 </div>
-            </nav>
-        </header> 
-
-    <h1 class="titulos">Collares</h1>
-
-<div class="order">
-
-    <label for="ordenar">Ordenar por</label>  
-
-    <select name="" id="ordenar">
-        <option value="">Mayor precio</option>
-        <option value="">Menor precio</option>
-        <option value="">Mas relevante</option>
-        <option value="">Menos relevante</option>
-    </select>
-</div>
-
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.09.jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.07.jpeg" class="card-img-top" alt="Venecia">
+                    <div class="card-body">
+                        <h5 class="card-title">Venecia</h5>
+                        <p class="card-text">8.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.06 (2).jpeg" class="card-img-top" alt="Aguayo">
+                    <div class="card-body">
+                        <h5 class="card-title">Aguayo</h5>
+                        <p class="card-text">10.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.06 (1).jpeg" class="card-img-top" alt="Veronica">
+                    <div class="card-body">
+                        <h5 class="card-title">Veronica</h5>
+                        <p class="card-text">10.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.05.jpeg" class="card-img-top" alt="Frida">
+                    <div class="card-body">
+                        <h5 class="card-title">Frida</h5>
+                        <p class="card-text">8.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.05 (2).jpeg" class="card-img-top" alt="Melany">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Melany</h5>
+                        <p class="card-text">5.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.05 (1).jpeg" class="card-img-top" alt="Akira">
+                    <div class="card-body">
+                        <h5 class="card-title">Akira</h5>
+                        <p class="card-text">8.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.04.jpeg" class="card-img-top" alt="Alina">
+                    <div class="card-body">
+                        <h5 class="card-title">Alina</h5>
+                        <p class="card-text">10.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.04 (2).jpeg" class="card-img-top" alt="Zaira">
+                    <div class="card-body">
+                        <h5 class="card-title">Zaira</h5>
+                        <p class="card-text">10.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.04 (1).jpeg" class="card-img-top" alt="Tommy">
+                    <div class="card-body">
+                        <h5 class="card-title">Tommy</h5>
+                        <p class="card-text">5.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.03.jpeg" class="card-img-top" alt="Catherine">
+                    <div class="card-body">
+                        <h5 class="card-title">Catherine</h5>
+                        <p class="card-text">8.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4 text-center">
+                <div class="card">
+                    <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.20.59.jpeg" class="card-img-top" alt="Pandora">
+                    <div class="card-body">
+                        <h5 class="card-title">Pandora</h5>
+                        <p class="card-text">10.000$</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.07.jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.06 (2).jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.06 (1).jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.05.jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.05 (2).jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.05 (1).jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.04.jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.04 (2).jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.04 (1).jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.21.03.jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-        <div class="gallery-item">
-            <img src="../images/images-secc-collares/WhatsApp Image 2024-06-25 at 20.20.59.jpeg">
-            <h2>Nombre del producto</h2>
-            <div class="caption">Precio</div>
-        </div>
-    </div>
+    </main>
 
     <footer class="bg-dark text-white pt-4">
         <div class="container">
@@ -143,15 +187,15 @@
                     <a href="#" class="footerinfo">Proveedores</a>
                 </div>
                 <div class="col-md-4 text-center">
-                <h3 class="footerinfo">SEGUINOS EN NUESTRAS REDES!</h3>
-                <a href="#">
-                    <img src="../images/images-footer/instagram.png" height="50">
-                    <img src="../images/images-footer/facebook.png" height="50">
-                    <img src="../images/images-footer/whatsapp.png" height="50">
-                    <img src="../images/images-footer/linkedin.png" height="50">
-                    <img src="../images/images-footer/tik-tok.png" height="50">
-                    <img src="../images/images-footer/gorjeo.png" height="50">
-                </a>
+                    <h3 class="footerinfo">SEGUINOS EN NUESTRAS REDES!</h3>
+                    <a href="#">
+                        <img src="../images/images-footer/instagram.png" height="50" alt="Instagram">
+                        <img src="../images/images-footer/facebook.png" height="50" alt="Facebook">
+                        <img src="../images/images-footer/whatsapp.png" height="50" alt="WhatsApp">
+                        <img src="../images/images-footer/linkedin.png" height="50" alt="LinkedIn">
+                        <img src="../images/images-footer/tik-tok.png" height="50" alt="TikTok">
+                        <img src="../images/images-footer/gorjeo.png" height="50" alt="Twitter">
+                    </a>
                 </div>
             </div>
         </div>
@@ -160,6 +204,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    </body>
+</body>
 </html>
