@@ -41,9 +41,14 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-.img-fluid {
+.img-home {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-home:hover {
+  transform: scale(1.1);
 }
 
 /* HEADER STYLES */
