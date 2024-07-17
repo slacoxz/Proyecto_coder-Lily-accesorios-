@@ -483,6 +483,7 @@ select:disabled {
   display: none !important;
 }
 
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -538,6 +539,7 @@ legend + * {
 }
 
 [type=search] {
+
   outline-offset: -2px;
 }
 
@@ -559,6 +561,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
+
 }
 
 output {
@@ -12065,28 +12068,14 @@ main .barra-nav input[type=text]:focus {
   outline: none;
 }
 main .titulos {
-  font-size: 2.5rem;
-  text-align: center;
   font-family: "Alegreya SC", serif;
   font-weight: 400;
   text-align: center;
   background-color: #003366;
   color: #F5F5F5;
   padding: 10px;
-  margin-top: 2rem;
-  animation: fadeIn 1s ease-in-out;
-  animation: fadeIn 1s ease-in-out;
   margin-bottom: 20px;
-}
-main .order {
-  text-align: center;
-  margin: 1rem 0;
-}
-main .order label {
-  margin-right: 0.5rem;
-}
-main .order select {
-  padding: 0.5rem;
+  animation: fadeIn 1s ease-in-out;
 }
 main .gallery {
   display: flex;
@@ -12095,15 +12084,29 @@ main .gallery {
   gap: 1rem;
   margin-top: 20px;
 }
+main .gallery .gallery-item {
+  width: 300px;
+  margin-bottom: 20px;
+}
 main .gallery .gallery-item img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
   transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 main .gallery .gallery-item img:hover {
   transform: scale(1.1);
 }
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
 main .gallery .gallery-item h2, main .gallery .gallery-item .h2 {
   font-family: "Alegreya SC", serif;
   font-weight: 700;
@@ -12120,63 +12123,6 @@ main .gallery .gallery-item .caption {
   text-align: center;
   margin-top: 5px;
   animation: fadeIn 1s ease-in-out;
-}
-main .gallery .gallery-item {
-  width: 300px;
-  margin-bottom: 20px;
-}
-main .gallery-item {
-  flex: 1 1 calc(33.333% - 1rem);
-  max-width: calc(33.333% - 1rem);
-  text-align: center;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeIn 1s ease-in-out;
-}
-main .gallery-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-}
-main .gallery-item img:hover {
-  transform: scale(1.1);
-}
-main .gallery-item:hover img {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-main .gallery-item h2, main .gallery-item .h2 {
-  margin: 0.5rem 0;
-  font-size: 1.25rem;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  margin-top: 10px;
-  font-family: "Alegreya SC", serif;
-  color: #003366;
-  text-align: center;
-  text-transform: uppercase;
-}
-main .gallery-item .caption {
-  margin-top: 5px;
-  font-size: 1.25rem;
-  color: #555;
-  text-align: center;
-  font-weight: bold;
-  font-family: "Cactus Classical Serif", serif;
-}
-main .gallery-item span {
-  font-size: 1.5rem;
-  color: #ff5f6d;
-}
-main .gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 main .row {
   margin-bottom: 20px;
@@ -12221,6 +12167,31 @@ footer .footerinfo {
   font-weight: 300;
   color: #ffcc00;
   font-size: 1.2rem;
+}
+footer .footerinfo margin-bottom .order {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer .footerinfo margin-bottom .order .order label, footer .footerinfo margin-bottom .order .order select {
+  font-family: "Cactus Classical Serif", serif;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+footer .footerinfo margin-bottom .order label {
+  margin-right: 10px;
+}
+footer .footerinfo margin-bottom .order select {
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+footer .footerinfo .footerinfo {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 300;
+  color: #ffcc00;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   animation: fadeIn 1s ease-in-out;
 }
@@ -12232,14 +12203,14 @@ footer .footerinfo .footerinfo a:hover {
   color: #ff9900;
   transform: scale(1.1);
 }
-footer .form-control {
+footer .footerinfo .form-control {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
-footer .btn-primary {
+footer .footerinfo .btn-primary {
   background-color: #ffcc00;
   color: #343a40;
   padding: 0.5rem 1rem;
@@ -12248,14 +12219,14 @@ footer .btn-primary {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
-footer .btn-primary img {
+footer .footerinfo .btn-primary img {
   margin: 0.5rem;
 }
-footer .btn-primary:hover {
+footer .footerinfo .btn-primary:hover {
   background-color: #ff9900;
   transform: scale(1.05);
 }
-footer .container-footer {
+footer .footerinfo .container-footer {
   background-color: #36454F;
   display: grid;
   text-align: center;
@@ -12264,56 +12235,50 @@ footer .container-footer {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px;
 }
-footer .container-footer .info-foot-start, footer .container-footer .info-foot-center, footer .container-footer .info-foot-end {
+footer .footerinfo .container-footer .info-foot-start, footer .footerinfo .container-footer .info-foot-center, footer .footerinfo .container-footer .info-foot-end {
   text-align: center;
   margin-bottom: 20px;
 }
-
 @media (max-width: 767px) {
-  .container-header {
+  footer .container-header {
     flex-direction: column;
     align-items: center;
   }
-  .barra-nav input[type=text] {
+  footer .barra-nav input[type=text] {
     width: 100%;
   }
 }
 @media (max-width: 1024px) {
-  .gallery {
+  footer .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-  .container-header {
+  footer .container-header {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .container-header {
+  footer .container-header {
     grid-template-columns: 1fr 1fr;
     height: auto;
   }
-  .barra-nav input {
+  footer .barra-nav input {
     width: 100%;
   }
-  .container-footer {
+  footer .container-footer {
     grid-template-columns: 1fr;
     text-align: center;
   }
 }
 @media (max-width: 480px) {
-  .gallery {
+  footer .gallery {
     grid-template-columns: 1fr;
   }
-  .titulos {
+  footer .titulos {
     font-size: 1.5em;
     padding: 20px;
   }
-  .gallery-item .caption {
+  footer .gallery-item .caption {
     font-size: 0.9em;
   }
-  .container-header {
+  footer .container-header {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=estilos.css.map */
