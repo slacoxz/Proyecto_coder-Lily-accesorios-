@@ -11973,6 +11973,10 @@ textarea.form-control-lg {
     transform: translateY(0);
   }
 }
+
+/* COMIENZO DEL CCS DEL PROYECTO */
+
+/* GENERAL STYLES */
 body {
   background-color: #f8f9fa;
   height: 100vh;
@@ -11991,6 +11995,7 @@ body {
   height: auto;
 }
 
+/* HEADER STYLES */
 header {
   background-color: #a28d7c;
   color: #fff;
@@ -12075,7 +12080,7 @@ header .navbar-toggler .navbar-toggler-icon::before {
   }
 }
 
-
+/* MAIN STYLES */
 
 .nosotros-h2{
   color: #052c65;
@@ -12176,6 +12181,8 @@ main .row .col-md-3 img, main .row .col-md-4 img {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-in-out;
 }
+
+/* FOOTER STYLES */
 
 footer {
   background-color: #343a40;
@@ -12278,6 +12285,9 @@ footer .footerinfo .container-footer .info-foot-start, footer .footerinfo .conta
   text-align: center;
   margin-bottom: 20px;
 }
+
+/* RESPONSIVE STYLES */
+
 @media (max-width: 767px) {
   footer .container-header {
     flex-direction: column;
