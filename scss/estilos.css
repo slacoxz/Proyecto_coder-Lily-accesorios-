@@ -483,7 +483,6 @@ select:disabled {
   display: none !important;
 }
 
-
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -539,7 +538,6 @@ legend + * {
 }
 
 [type=search] {
-
   outline-offset: -2px;
 }
 
@@ -561,7 +559,6 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-
 }
 
 output {
@@ -12047,6 +12044,42 @@ header .navbar-toggler .navbar-toggler-icon::before {
   color: #fff;
 }
 
+.nosotros-p{
+  font-weight: 640;
+}
+
+.img-fluid {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+.nosotros-h2{
+  color: #052c65;
+}
 main .barra-nav {
   background-color: #343a40;
   padding: 10px;
@@ -12067,7 +12100,7 @@ main .barra-nav input[type=text]:focus {
   box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
   outline: none;
 }
-main .titulos {
+ main .titulos {
   font-family: "Alegreya SC", serif;
   font-weight: 400;
   text-align: center;
@@ -12076,6 +12109,7 @@ main .titulos {
   padding: 10px;
   margin-bottom: 20px;
   animation: fadeIn 1s ease-in-out;
+  margin-top: 20px;
 }
 main .gallery {
   display: flex;
@@ -12099,6 +12133,10 @@ main .gallery .gallery-item img:hover {
   transform: scale(1.1);
 }
 
+.card-title{
+  color: #003366;
+}
+
 .card-img-top {
   transition: transform 0.3s ease-in-out;
 }
@@ -12106,6 +12144,7 @@ main .gallery .gallery-item img:hover {
 .card-img-top:hover {
   transform: scale(1.1);
 }
+
 
 main .gallery .gallery-item h2, main .gallery .gallery-item .h2 {
   font-family: "Alegreya SC", serif;
