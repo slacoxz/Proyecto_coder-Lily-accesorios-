@@ -33,7 +33,7 @@ body {
 }
 
 header {
-  background-color: #212529;
+  background-color: #a28d7c;
   color: #fff;
   padding: 1rem 0;
   animation: slideIn 1s ease-in-out;
@@ -167,11 +167,24 @@ main .gallery-item h2 {
   margin: 0.5rem 0;
   font-size: 1.25rem;
   margin-top: 10px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-family: "Alegreya SC", serif;
+  color: #003366;
+  text-align: center;
+  text-transform: uppercase;
 }
 main .gallery-item .caption {
   margin-top: 5px;
   font-size: 1.25rem;
-  color: #333;
+  color: #555;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Cactus Classical Serif", serif;
+}
+main .gallery-item span {
+  font-size: 1.5rem;
+  color: #ff5f6d;
 }
 main .gallery-item:hover {
   transform: translateY(-5px);
@@ -216,7 +229,6 @@ footer .footerinfo {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   transition: color 0.3s, transform 0.3s;
-  text-align: center;
   display: block;
   margin-bottom: 1rem;
   text-decoration: none;
