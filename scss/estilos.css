@@ -41,16 +41,6 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-.img-home {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-
-.img-home:hover {
-  transform: scale(1.1);
-}
-
 /* HEADER STYLES */
 header {
   background-color: #a28d7c;
@@ -112,6 +102,16 @@ header .navbar-toggler .navbar-toggler-icon::before {
 .img-fluid {
   opacity: 0;
   animation: fadeIn 1s forwards;
+}
+
+.img-home {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-home:hover {
+  transform: scale(1.1);
 }
 
 @keyframes fadeIn {
