@@ -1,13 +1,13 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+
 // Variables
-$primary-color: #ffcc00;
-$hover-color: #ff9900;
-$dark-bg: #343a40;
-$footer-bg: #36454F;
-$footer-text-color: #fff;
-$header-bg: #212529;
-$header-text-color: #fff;
+$primary-color: #343a40;
+$secondary-color: #6c757d;
+$highlight-color: #007bff;
+$background-color: #f8f9fa;
+$text-color: #212529;
+$hover-highlight-color: #0056b3;
 
 // Mixins para Animaciones
 @mixin fade-in($duration) {
@@ -47,7 +47,8 @@ $header-text-color: #fff;
 
 // General Styles
 body {
-  background-color: #f8f9fa;
+  background-color: $background-color;
+  color: $text-color;
   height: 100vh;
   @include fade-in(1s);
   font-family: 'Arial', sans-serif;
@@ -64,10 +65,23 @@ body {
   height: auto;
 }
 
+header, footer {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+a {
+  color: $highlight-color;
+}
+
+a:hover {
+  color: $hover-highlight-color;
+}
+
 // Header Styles
 header {
-  background-color: #a28d7c;
-  color: $header-text-color;
+  background-color: $primary-color;
+  color: #ffffff;
   padding: 1rem 0; 
 
   @include slide-in(1s);
@@ -76,22 +90,23 @@ header {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    background-color: $primary-color;
 
     .nav-item {
       flex: 1;
       text-align: center;
 
       .nav-link {
-        color: $primary-color;
         font-size: 1.2rem;
         font-weight: bold;
         text-transform: uppercase;
         transition: color 0.3s, transform 0.3s;
         padding: 10px;
         @include hover-scale(0.3s);
+        color: #ffffff !important;
 
         &:hover {
-          color: $hover-color;
+          color: $highlight-color;
         }
       }
     }
@@ -110,7 +125,7 @@ header {
   }
 
   .navbar-toggler {
-    border-color: $header-text-color;
+    border-color: #ffffff;
 
     .navbar-toggler-icon {
       background-image: none;
@@ -119,7 +134,7 @@ header {
         content: '\f0c9'; // Font Awesome bars icon
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
-        color: $header-text-color;
+        color: #ffffff;
       }
     }
   }
@@ -128,7 +143,7 @@ header {
 // Main Styles
 main {
   .barra-nav {
-    background-color: $dark-bg;
+    background-color: $primary-color;
     padding: 10px;
     text-align: center;
     margin: 20px 0 35px;
@@ -144,7 +159,7 @@ main {
 
       &:focus {
         transform: scale(1.05);
-        box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
         outline: none;
       }
     }
@@ -154,8 +169,8 @@ main {
     font-family: "Alegreya SC", serif;
     font-weight: 400;
     text-align: center;
-    background-color: #003366;
-    color: #F5F5F5;
+    background-color: $primary-color;
+    color: #ffffff;
     padding: 10px;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
@@ -183,7 +198,7 @@ main {
       h2 {
         font-family: "Alegreya SC", serif;
         font-weight: 700;
-        color: #003366;
+        color: $primary-color;
         text-align: center;
         margin-top: 10px;
         animation: fadeIn 1s ease-in-out;
@@ -193,7 +208,7 @@ main {
         font-family: "Cactus Classical Serif", serif;
         font-weight: 300;
         font-size: 1.2rem;
-        color: #333;
+        color: $text-color;
         text-align: center;
         margin-top: 5px;
         animation: fadeIn 1s ease-in-out;
@@ -220,8 +235,8 @@ main {
 
 // Footer Styles
 footer {
-  background-color: $dark-bg;
-  color: $footer-text-color;
+  background-color: $primary-color;
+  color: #ffffff;
   padding: 2rem 0;
 
   .order {
@@ -250,146 +265,111 @@ footer {
   .footerinfo {
     font-family: "Cactus Classical Serif", serif;
     font-weight: 300;
-    color: #ffcc00;
+    color: $background-color;
     font-size: 1.2rem;
-    margin-bottom
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
 
-    .order {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+    a {
+      color: $background-color;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      color: $background-color;
+      transform: scale(1.1);
+    }
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .btn-primary {
+    background-color: $highlight-color;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: $hover-highlight-color;
+      transform: scale(1.05);
+    }
+  }
+
+  .container-footer {
+    background-color: $primary-color;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+
+    .info-foot-start, .info-foot-center, .info-foot-end {
+      text-align: center;
       margin-bottom: 20px;
-  
-      .order label, .order select {
-        font-family: "Cactus Classical Serif", serif;
-        font-size: 1.2rem;
-        margin-left: 10px;
-      }
-  
-      label {
-        margin-right: 10px;
-      }
-  
-      select {
-        width: auto;
-        padding: 0.5rem;
-        border-radius: 4px;
-      }
-    }
-  
-    .footerinfo {
-      font-family: "Cactus Classical Serif", serif;
-      font-weight: 300;
-      color: #ffcc00;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      animation: fadeIn 1s ease-in-out;
-  
-      a {
-        color: #ffcc00;
-        transition: color 0.3s, transform 0.3s;
-      }
-  
-      a:hover {
-        color: #ff9900;
-        transform: scale(1.1);
-      }
-    }
-  
-    .form-control {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-  
-    .btn-primary {
-      background-color: $primary-color;
-      color: $dark-bg;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s;
-  
-      img {
-        margin: 0.5rem;
-      }
-  
-      &:hover {
-        background-color: $hover-color;
-        transform: scale(1.05);
-      }
-    }
-  
-    .container-footer {
-      background-color: $footer-bg;
-      display: grid;
-      text-align: center;
-      align-items: center;
-      justify-content: space-between;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 20px;
-  
-      .info-foot-start, .info-foot-center, .info-foot-end {
-        text-align: center;
-        margin-bottom: 20px;
-      }
     }
   }
-  
-  // Responsive Styles
-  @media (max-width: 767px) {
-    .container-header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .barra-nav input[type="text"] {
-      width: 100%;
-    }
+}
+
+// Responsive Styles
+@media (max-width: 767px) {
+  .container-header {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 1024px) {
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .container-header {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .container-header {
-      grid-template-columns: 1fr 1fr;
-      height: auto;
-    }
-  
-    .barra-nav input {
-      width: 100%;
-    }
-  
-    .container-footer {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
+
+  .barra-nav input[type="text"] {
+    width: 100%;
   }
-  
-  @media (max-width: 480px) {
-    .gallery {
-      grid-template-columns: 1fr;
-    }
-  
-    .titulos {
-      font-size: 1.5em;
-      padding: 20px;
-    }
-  
-    .gallery-item .caption {
-      font-size: 0.9em;
-    }
-  
-    .container-header {
-      grid-template-columns: 1fr;
-    }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container-header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container-header {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .barra-nav input {
+    width: 100%;
+  }
+
+  .container-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .titulos {
+    font-size: 1.5em;
+    padding: 20px;
+  }
+
+  .gallery-item .caption {
+    font-size: 0.9em;
+  }
+
+  .container-header {
+    grid-template-columns: 1fr;
   }
 }
