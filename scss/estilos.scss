@@ -1,8 +1,8 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 // Variables
-$primary-color: #ffcc00;
-$hover-color: #ff9900;
+$primary-color: #ffff;
+$hover-color: #a28d7c;
 $dark-bg: #343a40;
 $footer-bg: #36454F;
 $footer-text-color: #fff;
@@ -128,7 +128,7 @@ header {
 // Main Styles
 main {
   .barra-nav {
-    background-color: $dark-bg;
+    background-color: #003366;
     padding: 10px;
     text-align: center;
     margin: 20px 0 35px;
@@ -159,7 +159,24 @@ main {
     padding: 10px;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out;
+    margin-top: 30px;
   }
+
+.img-home{
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-home:hover{
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
 
   .gallery {
     display: flex;
@@ -172,12 +189,14 @@ main {
       width: 300px;
       margin-bottom: 20px;
 
-      img {
+      .gallery-item img {
         max-width: 100%;
-        display: block;
         margin: 0 auto;
         transition: transform 0.3s;
-        @include hover-scale(0.3s); // Aquí aplicamos el mixin de zoom
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.1);
       }
 
       h2 {
@@ -201,11 +220,24 @@ main {
     }
   }
 
+  .card-title{
+    color:#003366;
+  }
+
+  .nosotros-h2{
+    color: #003366;
+  }
+
+  .nosotros-p{
+    font-weight: 500
+  }
+
   .row {
     margin-bottom: 20px;
 
     .col-md-3, .col-md-4 {
       padding: 0 10px;
+      
 
       img {
         width: 100%;
@@ -250,7 +282,7 @@ footer {
   .footerinfo {
     font-family: "Cactus Classical Serif", serif;
     font-weight: 300;
-    color: #ffcc00;
+    color: $footer-text-color;
     font-size: 1.2rem;
     margin-bottom
 
@@ -274,25 +306,6 @@ footer {
         width: auto;
         padding: 0.5rem;
         border-radius: 4px;
-      }
-    }
-  
-    .footerinfo {
-      font-family: "Cactus Classical Serif", serif;
-      font-weight: 300;
-      color: #ffcc00;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      animation: fadeIn 1s ease-in-out;
-  
-      a {
-        color: #ffcc00;
-        transition: color 0.3s, transform 0.3s;
-      }
-  
-      a:hover {
-        color: #ff9900;
-        transform: scale(1.1);
       }
     }
   
