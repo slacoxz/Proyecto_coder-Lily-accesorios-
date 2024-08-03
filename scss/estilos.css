@@ -483,12 +483,6 @@ select:disabled {
   display: none !important;
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -544,7 +538,6 @@ legend + * {
 }
 
 [type=search] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -566,7 +559,6 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
 }
 
 output {
@@ -12068,7 +12060,7 @@ header .navbar-toggler .navbar-toggler-icon::before {
 }
 
 main .barra-nav {
-  background-color: #343a40;
+  background-color: #003366;
   padding: 10px;
   text-align: center;
   margin: 20px 0 35px;
@@ -12108,14 +12100,12 @@ main .gallery .gallery-item {
   width: 300px;
   margin-bottom: 20px;
 }
-main .gallery .gallery-item img {
+main .gallery .gallery-item .gallery-item img {
   max-width: 100%;
-  display: block;
   margin: 0 auto;
   transition: transform 0.3s;
-  transition: transform 0.3s ease-in-out;
 }
-main .gallery .gallery-item img:hover {
+main .gallery .gallery-item .gallery-item img:hover {
   transform: scale(1.1);
 }
 main .gallery .gallery-item h2, main .gallery .gallery-item .h2 {
@@ -12134,6 +12124,15 @@ main .gallery .gallery-item .caption {
   text-align: center;
   margin-top: 5px;
   animation: fadeIn 1s ease-in-out;
+}
+main .card-title {
+  color: #003366;
+}
+main .nosotros-h2 {
+  color: #003366;
+}
+main .nosotros-p {
+  font-weight: 500;
 }
 main .row {
   margin-bottom: 20px;
@@ -12222,7 +12221,6 @@ footer .container-footer .info-foot-start, footer .container-footer .info-foot-c
   text-align: center;
   margin-bottom: 20px;
 }
-
 @media (max-width: 767px) {
   .container-header {
     flex-direction: column;
